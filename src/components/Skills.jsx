@@ -1,44 +1,44 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'PENETRATION TESTING',
-      icon: 'fa-shield-alt',
-      color: 'text-hacker-green',
-      bg: 'bg-terminal-bg',
+      title: "PENETRATION TESTING",
+      icon: "fa-shield-alt",
+      color: "text-hacker-green",
+      bg: "bg-terminal-bg",
       skills: [
-        { name: 'Web App Security', level: 95, color: 'bg-hacker-green' },
-        { name: 'Network Security', level: 88, color: 'bg-green-600' },
-        { name: 'OWASP Top 10', level: 92, color: 'bg-green-700' },
-        { name: 'Vulnerability Assessment', level: 90, color: 'bg-green-800' },
-      ]
+        { name: "Web App Security", level: 95, color: "bg-hacker-green" },
+        { name: "Network Security", level: 88, color: "bg-blue-600" },
+        { name: "OWASP Top 10", level: 92, color: "bg-green-700" },
+        { name: "Vulnerability Assessment", level: 90, color: "bg-green-800" },
+      ],
     },
     {
-      title: 'WEB DEVELOPMENT',
-      icon: 'fa-code',
-      color: 'text-secondary',
-      bg: 'bg-hacker-dark',
+      title: "WEB DEVELOPMENT",
+      icon: "fa-code",
+      color: "text-secondary",
+      bg: "bg-hacker-dark",
       skills: [
-        { name: 'React/Next.js', level: 95, color: 'bg-cyan-500' },
-        { name: 'Laravel/PHP', level: 88, color: 'bg-red-500' },
-        { name: 'Node.js', level: 90, color: 'bg-green-500' },
-        { name: 'Python/Django', level: 85, color: 'bg-yellow-500' },
-      ]
+        { name: "React/Next.js", level: 95, color: "bg-cyan-500" },
+        { name: "Laravel/PHP", level: 88, color: "bg-red-500" },
+        { name: "Node.js", level: 90, color: "bg-blue-500" },
+        { name: "Python/Django", level: 85, color: "bg-yellow-500" },
+      ],
     },
     {
-      title: 'CYBERSECURITY TOOLS',
-      icon: 'fa-tools',
-      color: 'text-hacker-green',
-      bg: 'bg-terminal-bg',
+      title: "CYBERSECURITY TOOLS",
+      icon: "fa-tools",
+      color: "text-hacker-green",
+      bg: "bg-terminal-bg",
       skills: [
-        { name: 'Burp Suite', level: 92, color: 'bg-orange-500' },
-        { name: 'Metasploit', level: 85, color: 'bg-red-600' },
-        { name: 'Kali Linux', level: 90, color: 'bg-blue-500' },
-        { name: 'Nmap/Wireshark', level: 88, color: 'bg-purple-500' },
-      ]
-    }
+        { name: "Burp Suite", level: 92, color: "bg-orange-500" },
+        { name: "Metasploit", level: 85, color: "bg-red-600" },
+        { name: "Kali Linux", level: 90, color: "bg-blue-500" },
+        { name: "Nmap/Wireshark", level: 88, color: "bg-purple-500" },
+      ],
+    },
   ];
 
   return (
@@ -50,7 +50,8 @@ const Skills = () => {
           </h2>
           <div className="h-1 w-32 bg-hacker-green mx-auto mb-4"></div>
           <p className="terminal-text max-w-2xl mx-auto">
-            Advanced technical expertise in cybersecurity and full-stack development
+            Advanced technical expertise in cybersecurity and full-stack
+            development
           </p>
         </div>
 
@@ -65,10 +66,14 @@ const Skills = () => {
               className={`matrix-border p-6 ${category.bg}`}
             >
               <div className="flex items-center mb-8">
-                <div className={`w-12 h-12 border-2 border-hacker-green rounded-lg flex items-center justify-center mr-4 ${category.color}`}>
+                <div
+                  className={`w-12 h-12 border-2 border-hacker-green rounded-lg flex items-center justify-center mr-4 ${category.color}`}
+                >
                   <i className={`fa ${category.icon} text-xl`}></i>
                 </div>
-                <h3 className="text-xl font-bold font-mono">{category.title}</h3>
+                <h3 className="text-xl font-bold font-mono">
+                  {category.title}
+                </h3>
               </div>
 
               <div className="space-y-6">
@@ -76,7 +81,9 @@ const Skills = () => {
                   <div key={skillIndex}>
                     <div className="flex justify-between mb-2">
                       <span className="font-mono text-sm">{skill.name}</span>
-                      <span className="font-bold text-hacker-green">{skill.level}%</span>
+                      <span className="font-bold text-hacker-green">
+                        {skill.level}%
+                      </span>
                     </div>
                     <div className="w-full bg-hacker-dark border border-hacker-green/30 rounded-full h-3 overflow-hidden">
                       <motion.div
@@ -90,9 +97,7 @@ const Skills = () => {
                     {/* Binary Progress Indicator */}
                     <div className="text-xs text-hacker-green/50 font-mono mt-1 flex justify-between">
                       {Array.from({ length: 10 }).map((_, i) => (
-                        <span key={i}>
-                          {Math.random() > 0.5 ? '1' : '0'}
-                        </span>
+                        <span key={i}>{Math.random() > 0.5 ? "1" : "0"}</span>
                       ))}
                     </div>
                   </div>
@@ -109,9 +114,24 @@ const Skills = () => {
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {[
-              'Kali Linux', 'React', 'Laravel', 'Python', 'Docker', 'AWS',
-              'Metasploit', 'Node.js', 'MySQL', 'Redis', 'Git', 'Jenkins',
-              'Burp Suite', 'Vue.js', 'Django', 'MongoDB', 'Nginx', 'Ansible'
+              "Kali Linux",
+              "React",
+              "Laravel",
+              "Python",
+              "Docker",
+              "AWS",
+              "Metasploit",
+              "Node.js",
+              "MySQL",
+              "Redis",
+              "Git",
+              "Jenkins",
+              "Burp Suite",
+              "Vue.js",
+              "Django",
+              "MongoDB",
+              "Nginx",
+              "Ansible",
             ].map((tech, index) => (
               <motion.div
                 key={index}
@@ -127,7 +147,7 @@ const Skills = () => {
                 <div className="text-xs text-hacker-green/50 mt-2">
                   {Array.from({ length: 6 }).map((_, i) => (
                     <span key={i} className="mx-1">
-                      {Math.random() > 0.5 ? '1' : '0'}
+                      {Math.random() > 0.5 ? "1" : "0"}
                     </span>
                   ))}
                 </div>

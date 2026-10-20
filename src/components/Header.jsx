@@ -1,20 +1,23 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react';
+import React, { useState, useEffect } from "react";
+import { Link } from "react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'skills', 'projects', 'contact'];
+      const sections = ["home", "about", "skills", "projects", "contact"];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
           const { offsetTop, offsetHeight } = element;
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+          if (
+            scrollPosition >= offsetTop &&
+            scrollPosition < offsetTop + offsetHeight
+          ) {
             setActiveSection(section);
             break;
           }
@@ -22,16 +25,16 @@ const Header = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navItems = [
-    { id: 'home', label: 'ROOT@HACKER:~$', icon: 'fa-terminal' },
-    { id: 'about', label: 'WHO_AM_I', icon: 'fa-user-secret' },
-    { id: 'skills', label: 'SKILLS.TXT', icon: 'fa-code' },
-    { id: 'projects', label: 'PROJECTS/', icon: 'fa-folder' },
-    { id: 'contact', label: 'CONTACT.SH', icon: 'fa-envelope' },
+    { id: "home", label: "ROOT@HACKER:~$", icon: "fa-terminal" },
+    { id: "about", label: "WHO_AM_I", icon: "fa-user-secret" },
+    { id: "skills", label: "SKILLS.TXT", icon: "fa-code" },
+    { id: "projects", label: "PROJECTS/", icon: "fa-folder" },
+    { id: "contact", label: "CONTACT.SH", icon: "fa-envelope" },
   ];
 
   return (
@@ -39,10 +42,10 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link 
-            to="#home" 
+          <Link
+            to="#home"
             className="text-2xl font-bold neon-glow animate-pulse-glow"
-            onClick={() => setActiveSection('home')}
+            onClick={() => setActiveSection("home")}
           >
             <span className="text-hacker-green">KHA</span>
             <span className="text-secondary">LID_</span>
@@ -60,17 +63,23 @@ const Header = () => {
                 onClick={() => setActiveSection(item.id)}
                 className={`relative px-4 py-2 border-2 rounded-lg transition-all duration-300 group ${
                   activeSection === item.id
-                    ? 'border-hacker-green bg-terminal-bg shadow-[0_0_15px_#00ff00]'
-                    : 'border-hacker-green/30 hover:border-hacker-green'
+                    ? "border-hacker-green bg-terminal-bg shadow-[0_0_15px_#00ff00]"
+                    : "border-hacker-green/30 hover:border-hacker-green"
                 }`}
               >
                 <div className="flex items-center space-x-2">
                   <i className={`fa ${item.icon} text-sm`}></i>
-                  <span className="font-mono text-sm tracking-wider">{item.label}</span>
+                  <span className="font-mono text-sm tracking-wider">
+                    {item.label}
+                  </span>
                 </div>
-                <div className={`absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-2 h-1 bg-hacker-green ${
-                  activeSection === item.id ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'
-                } transition-opacity duration-300`}></div>
+                <div
+                  className={`absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-2 h-1 bg-hacker-green ${
+                    activeSection === item.id
+                      ? "opacity-100"
+                      : "opacity-0 group-hover:opacity-100"
+                  } transition-opacity duration-300`}
+                ></div>
               </Link>
             ))}
           </nav>
@@ -88,7 +97,7 @@ const Header = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden hacker-btn p-2"
           >
-            <i className={`fa ${isMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
+            <i className={`fa ${isMenuOpen ? "fa-times" : "fa-bars"}`}></i>
           </button>
         </div>
 
@@ -106,8 +115,8 @@ const Header = () => {
                   }}
                   className={`block px-4 py-3 rounded border-2 transition-all ${
                     activeSection === item.id
-                      ? 'border-hacker-green bg-black text-hacker-green'
-                      : 'border-hacker-green/30 hover:border-hacker-green'
+                      ? "border-hacker-green bg-black text-hacker-green"
+                      : "border-hacker-green/30 hover:border-hacker-green"
                   }`}
                 >
                   <div className="flex items-center space-x-3">

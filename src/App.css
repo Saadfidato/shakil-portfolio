@@ -201,3 +201,120 @@ input:focus, textarea:focus {
   z-index: 1;
   opacity: 0.1;
 }
+
+
+/* Minimal academic portfolio theme */
+
+.academic-theme {
+  min-height: 100vh;
+  position: relative;
+  isolation: isolate;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+/* Subtle grid and soft blue gradient */
+.academic-theme::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  background-image:
+    radial-gradient(
+      ellipse at 85% 10%,
+      rgba(37, 99, 235, 0.09),
+      transparent 45%
+    ),
+    linear-gradient(
+      rgba(148, 163, 184, 0.07) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(148, 163, 184, 0.07) 1px,
+      transparent 1px
+    );
+
+  background-size:
+    100% 100%,
+    48px 48px,
+    48px 48px;
+}
+
+/* Professional typography */
+.academic-theme {
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.academic-theme h1,
+.academic-theme h2,
+.academic-theme h3 {
+  color: #0f172a;
+  letter-spacing: -0.025em;
+}
+
+/* Clean navigation bar */
+.academic-theme .glass-header {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 6px 30px rgba(15, 23, 42, 0.05);
+}
+
+
+/* Professional animated portfolio background */
+
+body {
+  margin: 0;
+  background: #f8fbff;
+  color: #0f172a;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.portfolio-app {
+  min-height: 100vh;
+  position: relative;
+  isolation: isolate;
+
+  background:
+    radial-gradient(
+      ellipse at 15% 15%,
+      rgba(219, 234, 254, 0.65),
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at 85% 80%,
+      rgba(224, 242, 254, 0.55),
+      transparent 50%
+    ),
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #f8fbff 50%,
+      #eff6ff 100%
+    );
+
+  color: #0f172a;
+}
+
+.particle-background {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+/* Ensure portfolio sections appear above particles */
+.portfolio-app section,
+.portfolio-app footer {
+  position: relative;
+  z-index: 1;
+}
+
+* {
+  font-family: Inter, system-ui, sans-serif;
+}
