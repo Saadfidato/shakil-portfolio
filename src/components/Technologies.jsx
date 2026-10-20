@@ -32,7 +32,7 @@ const Technologies = () => {
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         <div className="text-center mb-20">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-8 tracking-wide font-mono">
-            <span className="bg-gradient-to-r from-blue-600 via-emerald-500 to-green-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-600 via-emerald-500 to-blue-400 bg-clip-text text-transparent">
               &gt; TOOLSET
             </span>
           </h2>
@@ -51,9 +51,9 @@ const Technologies = () => {
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder="search technologies..."
-                className="w-full px-6 py-4 pl-14 bg-black/50 border border-blue-200/30 rounded-2xl text-slate-700 placeholder-green-500/50 focus:outline-none focus:ring-2 focus:ring-green-500/50 focus:border-blue-200/50 transition-all duration-300 backdrop-blur-lg group-hover:scale-105 font-mono"
+                className="w-full px-6 py-4 pl-14 bg-black/50 border border-blue-200/30 rounded-2xl text-slate-700 placeholder-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-200/50 transition-all duration-300 backdrop-blur-lg group-hover:scale-105 font-mono"
               />
-              <i className="fas fa-search absolute left-5 top-1/2 transform -translate-y-1/2 w-6 h-6 text-green-500/50 group-hover:text-green-500 transition-colors duration-300" />
+              <i className="fas fa-search absolute left-5 top-1/2 transform -translate-y-1/2 w-6 h-6 text-blue-500/50 group-hover:text-blue-500 transition-colors duration-300" />
             </div>
           </div>
 
@@ -81,8 +81,8 @@ const Technologies = () => {
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:gap-6">
           {filteredTech.map((tech, idx) => (
             <div key={idx} className="group relative">
-              <div className="bg-gradient-to-br from-black/60 to-green-900/10 rounded-2xl border-2 border-blue-200/20 backdrop-blur-lg p-6 text-center hover:bg-green-900/20 hover:border-blue-200/50 transition-all duration-500 transform hover:scale-110 hover:-translate-y-2">
-                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-green-600 to-indigo-600 rounded-2xl overflow-hidden flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-green-500/20">
+              <div className="bg-gradient-to-br from-black/60 to-blue-900/10 rounded-2xl border-2 border-blue-200/20 backdrop-blur-lg p-6 text-center hover:bg-blue-900/20 hover:border-blue-200/50 transition-all duration-500 transform hover:scale-110 hover:-translate-y-2">
+                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-2xl overflow-hidden flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-blue-500/20">
                   <i className={`${tech.icon} text-white text-2xl`} />
                 </div>
                 <h4 className="text-slate-700 font-bold text-base mb-2 group-hover:text-blue-600 transition-colors duration-300 tracking-wide font-mono">

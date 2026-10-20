@@ -1,4 +1,6 @@
 import { useState } from "react";
+import shakilImage from "../assets/img/shakil.jpg";
+
 const Hero = () => {
   const [typingText, setTypingText] = useState("");
   const [counters, setCounters] = useState({
@@ -22,12 +24,12 @@ const Hero = () => {
               </div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6 font-mono">
                 <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-                  KHALID AFGHANMAL
+                  SHAKIL SALIM
                 </span>
               </h1>
               <div className="typing-text text-2xl md:text-3xl text-blue-600 mb-6 font-mono">
                 <span className="text-slate-700">$ WHOAMI:</span>{" "}
-                <span className="typed-text bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">
+                <span className="typed-text bg-gradient-to-r from-blue-700 to-indigo-700 bg-clip-text text-transparent">
                   {typingText}
                 </span>
                 <span className="cursor animate-pulse">_</span>
@@ -67,10 +69,11 @@ const Hero = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+
+            {/*  <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <button
                 onClick={() => scrollToSection("projects")}
-                className="inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-emerald-700 text-white px-8 py-4 rounded-2xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg shadow-md hover:shadow-green-500/30 border border-blue-200/30 font-mono"
+                className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-blue-900 text-white px-8 py-4 rounded-2xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg shadow-md hover:shadow-blue-500/30 border border-blue-200/30 font-mono"
               >
                 <span>VIEW PORTFOLIO</span>
                 <i className="fas fa-terminal" />
@@ -83,37 +86,39 @@ const Hero = () => {
                 <i className="fas fa-key" />
               </button>
             </div>
+             */}
           </div>
 
           {/* Profile Image */}
           <div className="relative flex justify-center">
             <div className="relative w-80 h-80 md:w-96 md:h-96">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full animate-pulse" />
-              <div className="absolute inset-2 bg-black rounded-full overflow-hidden shadow-2xl border-4 border-blue-200/30">
+              <div className="absolute inset-2 bg-white rounded-full overflow-hidden shadow-2xl border-4 border-blue-200">
+                {" "}
                 <img
-                  src="https://khalidafghanmal.netlify.app/images/khalid.jpeg"
-                  alt="Khalid Afghanmal"
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
-                  onError={(e) => {
+                  src={shakilImage}
+                  alt="Shakil Profile"
+                  className="w-full h-full object-cover transition-all duration-500 hover:scale-105"
+                  /* onError={(e) => {
                     e.target.onerror = null;
                     e.target.src =
                       "https://via.placeholder.com/384x384/00ff00/000000?text=KHALID_AFGHANMAL";
-                  }}
+                  }} */
                 />
               </div>
 
               {/* Floating Icons */}
-              <div className="absolute -top-4 -right-4 w-16 h-16 bg-black/80 backdrop-blur-lg border border-blue-200/30 rounded-full flex items-center justify-center animate-float shadow-lg shadow-green-500/20">
+              <div className="absolute -top-4 -right-4 w-16 h-16 bg-black/80 backdrop-blur-lg border border-blue-200/30 rounded-full flex items-center justify-center animate-float shadow-lg shadow-blue-500/20">
                 <i className="fas fa-terminal text-blue-600 text-xl" />
               </div>
               <div
-                className="absolute -bottom-4 -left-4 w-16 h-16 bg-black/80 backdrop-blur-lg border border-blue-200/30 rounded-full flex items-center justify-center animate-float shadow-lg shadow-green-500/20"
+                className="absolute -bottom-4 -left-4 w-16 h-16 bg-black/80 backdrop-blur-lg border border-blue-200/30 rounded-full flex items-center justify-center animate-float shadow-lg shadow-blue-500/20"
                 style={{ animationDelay: "2s" }}
               >
                 <i className="fas fa-shield-alt text-blue-600 text-xl" />
               </div>
               <div
-                className="absolute top-1/2 -right-8 w-16 h-16 bg-black/80 backdrop-blur-lg border border-blue-200/30 rounded-full flex items-center justify-center animate-float shadow-lg shadow-green-500/20"
+                className="absolute top-1/2 -right-8 w-16 h-16 bg-black/80 backdrop-blur-lg border border-blue-200/30 rounded-full flex items-center justify-center animate-float shadow-lg shadow-blue-500/20"
                 style={{ animationDelay: "4s" }}
               >
                 <i className="fas fa-bug text-blue-600 text-xl" />

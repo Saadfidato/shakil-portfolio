@@ -6,13 +6,13 @@ const Skills = () => {
     {
       title: "PENETRATION TESTING",
       icon: "fa-shield-alt",
-      color: "text-hacker-green",
+      color: "text-hacker-blue",
       bg: "bg-terminal-bg",
       skills: [
-        { name: "Web App Security", level: 95, color: "bg-hacker-green" },
+        { name: "Web App Security", level: 95, color: "bg-hacker-blue" },
         { name: "Network Security", level: 88, color: "bg-blue-600" },
-        { name: "OWASP Top 10", level: 92, color: "bg-green-700" },
-        { name: "Vulnerability Assessment", level: 90, color: "bg-green-800" },
+        { name: "OWASP Top 10", level: 92, color: "bg-blue-700" },
+        { name: "Vulnerability Assessment", level: 90, color: "bg-blue-800" },
       ],
     },
     {
@@ -30,7 +30,7 @@ const Skills = () => {
     {
       title: "CYBERSECURITY TOOLS",
       icon: "fa-tools",
-      color: "text-hacker-green",
+      color: "text-hacker-blue",
       bg: "bg-terminal-bg",
       skills: [
         { name: "Burp Suite", level: 92, color: "bg-orange-500" },
@@ -48,7 +48,7 @@ const Skills = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="neon-glow">SYSTEM_SKILLS</span>
           </h2>
-          <div className="h-1 w-32 bg-hacker-green mx-auto mb-4"></div>
+          <div className="h-1 w-32 bg-hacker-blue mx-auto mb-4"></div>
           <p className="terminal-text max-w-2xl mx-auto">
             Advanced technical expertise in cybersecurity and full-stack
             development
@@ -67,7 +67,7 @@ const Skills = () => {
             >
               <div className="flex items-center mb-8">
                 <div
-                  className={`w-12 h-12 border-2 border-hacker-green rounded-lg flex items-center justify-center mr-4 ${category.color}`}
+                  className={`w-12 h-12 border-2 border-hacker-blue rounded-lg flex items-center justify-center mr-4 ${category.color}`}
                 >
                   <i className={`fa ${category.icon} text-xl`}></i>
                 </div>
@@ -81,11 +81,11 @@ const Skills = () => {
                   <div key={skillIndex}>
                     <div className="flex justify-between mb-2">
                       <span className="font-mono text-sm">{skill.name}</span>
-                      <span className="font-bold text-hacker-green">
+                      <span className="font-bold text-hacker-blue">
                         {skill.level}%
                       </span>
                     </div>
-                    <div className="w-full bg-hacker-dark border border-hacker-green/30 rounded-full h-3 overflow-hidden">
+                    <div className="w-full bg-hacker-dark border border-hacker-blue/30 rounded-full h-3 overflow-hidden">
                       <motion.div
                         initial={{ width: 0 }}
                         whileInView={{ width: `${skill.level}%` }}
@@ -95,7 +95,7 @@ const Skills = () => {
                       ></motion.div>
                     </div>
                     {/* Binary Progress Indicator */}
-                    <div className="text-xs text-hacker-green/50 font-mono mt-1 flex justify-between">
+                    <div className="text-xs text-hacker-blue/50 font-mono mt-1 flex justify-between">
                       {Array.from({ length: 10 }).map((_, i) => (
                         <span key={i}>{Math.random() > 0.5 ? "1" : "0"}</span>
                       ))}
@@ -141,10 +141,10 @@ const Skills = () => {
                 viewport={{ once: true }}
                 className="matrix-border p-4 text-center hover:shadow-[0_0_20px_#00ff00] transition-all duration-300 cursor-pointer group"
               >
-                <div className="text-hacker-green font-mono text-sm group-hover:scale-110 transition-transform">
+                <div className="text-hacker-blue font-mono text-sm group-hover:scale-110 transition-transform">
                   {tech}
                 </div>
-                <div className="text-xs text-hacker-green/50 mt-2">
+                <div className="text-xs text-hacker-blue/50 mt-2">
                   {Array.from({ length: 6 }).map((_, i) => (
                     <span key={i} className="mx-1">
                       {Math.random() > 0.5 ? "1" : "0"}

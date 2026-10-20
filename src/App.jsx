@@ -228,7 +228,7 @@ function App() {
       </div>
 
       {/* Header */}
-      <header className="glass-header fixed top-4 left-1/2 transform -translate-x-1/2 w-[calc(100%-2rem)] max-w-6xl bg-black/80 backdrop-blur-xl border border-blue-200/20 rounded-2xl z-40 shadow-lg shadow-green-500/10">
+      <header className="glass-header fixed top-4 left-1/2 transform -translate-x-1/2 w-[calc(100%-2rem)] max-w-6xl bg-black/80 backdrop-blur-xl border border-blue-200/20 rounded-2xl z-40 shadow-lg shadow-blue-500/10">
         <div className="mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
             <button
@@ -256,7 +256,7 @@ function App() {
                   className={`relative transition-all duration-500 py-3 px-6 rounded-xl hover:scale-105 group
                     ${
                       activeSection === section
-                        ? "ttext-blue-600 bg-blue-500/10 border border-blue-200/20"
+                        ? "text-blue-700 bg-blue-500/10 border border-blue-200/20"
                         : "text-blue-600/70 hover:text-blue-600 hover:bg-blue-500/5"
                     }`}
                 >
@@ -275,13 +275,13 @@ function App() {
                 className="hamburger-btn flex flex-col justify-center items-center w-12 h-12 rounded-xl bg-blue-500/10 hover:bg-blue-500/20 transition-all duration-500 group border border-blue-200/30"
               >
                 <span
-                  className={`block w-6 h-0.5 bg-green-400 mb-1.5 transition-all duration-500 ${isMobileMenuOpen ? "rotate-45 translate-y-2" : ""}`}
+                  className={`block w-6 h-0.5 bg-blue-400 mb-1.5 transition-all duration-500 ${isMobileMenuOpen ? "rotate-45 translate-y-2" : ""}`}
                 />
                 <span
-                  className={`block w-6 h-0.5 bg-green-400 mb-1.5 transition-all duration-500 ${isMobileMenuOpen ? "opacity-0" : ""}`}
+                  className={`block w-6 h-0.5 bg-blue-400 mb-1.5 transition-all duration-500 ${isMobileMenuOpen ? "opacity-0" : ""}`}
                 />
                 <span
-                  className={`block w-6 h-0.5 bg-green-400 transition-all duration-500 ${isMobileMenuOpen ? "-rotate-45 -translate-y-2" : ""}`}
+                  className={`block w-6 h-0.5 bg-blue-400 transition-all duration-500 ${isMobileMenuOpen ? "-rotate-45 -translate-y-2" : ""}`}
                 />
               </button>
             </div>

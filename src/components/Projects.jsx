@@ -33,7 +33,7 @@ const Projects = () => {
               className="rounded-2xl overflow-hidden shadow-2xl bg-black/50 border border-blue-200/20 hover:border-blue-200/50 transition-all duration-300 hover:-translate-y-2"
             >
               <div className="h-48 relative overflow-hidden rounded-t-2xl">
-                <div className="absolute inset-0 bg-gradient-to-r from-green-600/50 to-emerald-700/40" />
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/50 to-emerald-700/40" />
                 <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                   <i className="fas fa-lock text-6xl text-blue-600/80" />
                 </div>

@@ -36,7 +36,7 @@ const Services = () => {
       <div className="max-w-screen-2xl mx-auto px-4 relative z-10">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-8 font-mono">
-            <span className="bg-gradient-to-r from-blue-600 via-emerald-500 to-green-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-600 via-emerald-500 to-blue-400 bg-clip-text text-transparent">
               &gt; SERVICES
             </span>
           </h2>
@@ -47,12 +47,12 @@ const Services = () => {
           {services.map((service, idx) => (
             <div
               key={idx}
-              className="group relative bg-black/40 backdrop-blur-2xl rounded-3xl p-8 border border-blue-200/20 shadow-2xl hover:shadow-3xl hover:border-green-400/50 transition-all duration-700 cursor-pointer overflow-hidden transform hover:-translate-y-2"
+              className="group relative bg-black/40 backdrop-blur-2xl rounded-3xl p-8 border border-blue-200/20 shadow-2xl hover:shadow-3xl hover:border-blue-400/50 transition-all duration-700 cursor-pointer overflow-hidden transform hover:-translate-y-2"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-indigo-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl" />
               <div className="relative z-10">
                 <div className="mb-6">
-                  <div className="w-24 h-24 bg-gradient-to-br from-green-600 to-emerald-700 rounded-3xl flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-3 overflow-hidden relative shadow-lg shadow-green-500/20">
+                  <div className="w-24 h-24 bg-gradient-to-br from-blue-600 to-emerald-700 rounded-3xl flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-3 overflow-hidden relative shadow-lg shadow-blue-500/20">
                     <i className={`${service.icon} text-white text-3xl`} />
                     <div className="absolute inset-0 bg-white/10 blur-xl rounded-3xl opacity-0 group-hover:opacity-30 transition-opacity duration-500" />
                   </div>

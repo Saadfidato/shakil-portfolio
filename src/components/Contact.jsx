@@ -90,7 +90,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
-                    className="bg-black/50 border border-blue-200/30 w-full p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500/50 text-slate-700 font-mono placeholder-green-500/50"
+                    className="bg-black/50 border border-blue-200/30 w-full p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/50 text-slate-700 font-mono placeholder-blue-500/50"
                     placeholder="Enter your name"
                   />
                 </div>
@@ -100,7 +100,7 @@ const Contact = () => {
                   </label>
                   <input
                     type="email"
-                    className="bg-black/50 border border-blue-200/30 w-full p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500/50 text-slate-700 font-mono placeholder-green-500/50"
+                    className="bg-black/50 border border-blue-200/30 w-full p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/50 text-slate-700 font-mono placeholder-blue-500/50"
                     placeholder="Enter your email"
                   />
                 </div>
@@ -110,13 +110,13 @@ const Contact = () => {
                   </label>
                   <textarea
                     rows="4"
-                    className="bg-black/50 border border-blue-200/30 w-full p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500/50 text-slate-700 font-mono placeholder-green-500/50"
+                    className="bg-black/50 border border-blue-200/30 w-full p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500/50 text-slate-700 font-mono placeholder-blue-500/50"
                     placeholder="Type your message..."
                   />
                 </div>
                 <button
                   type="submit"
-                  className="bg-gradient-to-r from-green-600 to-emerald-700 border border-blue-200/30 w-full py-3 rounded-lg font-medium hover:scale-105 transition text-white font-mono uppercase tracking-wider"
+                  className="bg-gradient-to-r from-blue-600 to-emerald-700 border border-blue-200/30 w-full py-3 rounded-lg font-medium hover:scale-105 transition text-white font-mono uppercase tracking-wider"
                 >
                   SEND MESSAGE
                 </button>
